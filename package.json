@@ -12,5 +12,10 @@
   "dependencies": {
     "@tensorflow/tfjs": "^2.7.0",
     "@tensorflow/tfjs-vis": "^1.4.3"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.12.10",
+    "@babel/plugin-transform-runtime": "^7.12.10",
+    "@babel/preset-env": "^7.12.11"
   }
 }
