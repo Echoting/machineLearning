@@ -33,8 +33,8 @@ window.onload = async () => {
     const labels = tf.tensor(data.map(point => point.label))
 
     await model.fit(inputs, labels, {
-        batchSize: 40,
-        epochs: 20,
+        batchSize: 40,  // 每次要学习的样本数量，400个样本，每次学习40个，分10次学习
+        epochs: 20, // 迭代整个数据样本的次数，400个样本，训练20次
         callbacks: tfvis.show.fitCallbacks(
             {name: '逻辑回归训练过程'},
             ['loss']
