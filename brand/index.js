@@ -93,6 +93,10 @@ window.onload = async () => {
         }, 0)
     }
 
+    window.download = async () => {
+        model.save('downloads://transferModel')
+    }
+
 
 
 }
